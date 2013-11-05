@@ -8,5 +8,6 @@
 #define NUM_SPARSE_GRAD_THREADS_PER_BLOCK    512
 
 __global__ void kMultiplyBySigmoidGrad(float* act, float* target, const unsigned int len);
+__global__ void kCalculateL1Penalty(float* act, float p, float* target, const unsigned int len);
 
 #endif
